@@ -1,0 +1,1 @@
+worker: python server_monitor.py 

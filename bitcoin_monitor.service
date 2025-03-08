@@ -1,0 +1,14 @@
+[Unit]
+Description=Bitcoin Price Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=your_username
+WorkingDirectory=/path/to/script
+ExecStart=/usr/bin/python3 /path/to/script/server_monitor.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target 
